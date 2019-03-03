@@ -1,0 +1,25 @@
+# The URL the site will be built for
+base_url = "lapz.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme="hyde"
+
+title = "Lapz World"
+description = "A blog were I share whats on my mind"
+
+[extra]
+# Put all your custom variables here
+hyde_links = [
+    {url="/",name="Home"},
+    {url="https:://github.com/lapz",name ="Github"},
+    {url="https:://linkedin.com/in/lprattl1",name="Linked In"}    
+]
