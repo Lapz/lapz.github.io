@@ -10,6 +10,6 @@ script:
 # If you are using a different folder than `public` for the output directory, you will
 # need to change the `zola` command and the `ghp-import` path
 after_success: |
-  [ $TRAVIS_BRANCH = master ] &&
+  [ $TRAVIS_BRANCH = dev ] &&
   [ $TRAVIS_PULL_REQUEST = false ] && ghp-import -n public --branch=master &&
   git push -fq https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git master
