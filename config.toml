@@ -26,7 +26,7 @@ taxonomies =[
 after_dark_menu = [
     {url="/",name="Home"},
     {url="https://www.github.com/lapz",name="Github"},
-    {url = "/Categories",name="Categories"}
+    {url = "/categories",name="Categories"}
 ]
 
 after_dark_title = "My Blog"
