@@ -45,9 +45,9 @@
 </span>
     </header>
     <div itemprop="articleBody">
-      <p>I have been working on a programming langauge called Tox that is a statically based programming language that is  written in Rust and is based on Lox. Lox is the progamming language that you a reader implement when going through the <a href="http://www.craftinginterpreters.com/contents.html">Crafting Interpreters</a>.</p>
+      <p>I have been working on a programming langauge called Tox that is a statically based programming language that is written in Rust and is based on Lox. Lox is the programming language that you as a reader implement when going through <a href="http://www.craftinginterpreters.com/contents.html">Crafting Interpreters</a>.</p>
 <p><a name="continue-reading"></a></p>
-<p>After finishing the creafting interpreters book you end up with a programming langauge that is dynmacillay typed. I genearly have no problems with a dynamically typed programming language but one the first improvements that I made to Tox was to add a type system.</p>
+<p>After finishing the crafting interpreters book you end up with a programming langauge that is dynamically typed. I generally have no problems with a dynamically typed programming language but one the first improvements that I made to Tox was to add a type system.</p>
 <p>This resulted in Tox becoming like this :</p>
 <pre style="background-color:#2b303b;">
 <span style="color:#b48ead;">var </span><span style="color:#bf616a;">foo</span><span style="color:#c0c5ce;">:int = </span><span style="color:#d08770;">10</span><span style="color:#c0c5ce;">;
@@ -59,9 +59,21 @@
 </span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">foo</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">:int,</span><span style="color:#bf616a;">b</span><span style="color:#c0c5ce;">:int) -&gt; int {
 </span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">+</span><span style="color:#bf616a;">b</span><span style="color:#c0c5ce;">;
 </span><span style="color:#c0c5ce;">}
+</span></pre>
+<p>instead of</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">var </span><span style="color:#bf616a;">foo</span><span style="color:#c0c5ce;">= </span><span style="color:#d08770;">10</span><span style="color:#c0c5ce;">;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">bar</span><span style="color:#c0c5ce;">= </span><span style="color:#d08770;">10</span><span style="color:#c0c5ce;">;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">print foo </span><span style="color:#c0c5ce;">+ </span><span style="color:#bf616a;">bar</span><span style="color:#c0c5ce;">;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">foo</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">,</span><span style="color:#bf616a;">b</span><span style="color:#c0c5ce;">) {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">+</span><span style="color:#bf616a;">b</span><span style="color:#c0c5ce;">;
+</span><span style="color:#c0c5ce;">}
 </span></pre><h2 id="type-inference-generics">Type Inference + Generics</h2>
-<p>Whilst type systems are very useful I hated the fact that I had to write down the type for every single variable declartion which is pretty cumbersome and is one of my pet peeves with Java and C. After using Rust I discovered type inference and you know what they say, Once you have type inference you can never go back.</p>
-<p>The algorthim that most programming langauges use is algorithm W which is also known as Hindley Milner type inference. There are many papers that go through it and I've read through many implementations and blog posts on the topic. In the end  I decided to base my implementation on the one outlined within <a href="https://www.amazon.co.uk/Modern-Compiler-Implementation-Andrew-Appel-ebook/dp/B00D2WQAE8/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1551619462&amp;sr=1-1&amp;keywords=Modern+Compiler+Implementation+in++ml">Modern Compiler Implementation in ML</a>. The great thing about
+<p>Whilst type systems are very useful I hated the fact that I had to write down the type for every single variable declaration which is pretty cumbersome and is one of my pet peeves with Java and C. After using Rust I discovered type inference and you know what they say, Once you have type inference you can never go back.</p>
+<p>The algorithm that most programming languages use is algorithm W which is also known as Hindley Milner type inference. There are many papers that go through it and I've read through many implementations and blog posts on the topic. In the end  I decided to base my implementation on the one outlined within <a href="https://www.amazon.co.uk/Modern-Compiler-Implementation-Andrew-Appel-ebook/dp/B00D2WQAE8/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1551619462&amp;sr=1-1&amp;keywords=Modern+Compiler+Implementation+in++ml">Modern Compiler Implementation in ML</a>. The great thing about
 Hindley Milner type inference is that you also get polymorphism and with polymorphism you also get generics for free. Allowing you to write code like</p>
 <pre style="background-color:#2b303b;">
 <span style="color:#b48ead;">enum </span><span style="color:#c0c5ce;">List&lt;T&gt; {
@@ -89,9 +101,9 @@ Hindley Milner type inference is that you also get polymorphism and with polymor
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#c0c5ce;">}
 </span></pre>
-<p>Whilst the language is in a good state and it is possible to wirte small to medium programs within Tox but there are two features that I plan on implementing before I add anything more.  The two features are modules and pattern matching. I have already started working on pattern matching and I have been able to add the typechecking of pattern matching but the checking for redundant pattern sometimes fails.</p>
+<p>Whilst the language is in a good state and it is possible to write small to medium programs within Tox but there are two features that I plan on implementing before I add anything more.  The two features are modules and pattern matching. I have already started working on pattern matching and I have been able to add the type checking of pattern matching but the checking for redundant pattern sometimes fails.</p>
 <h2 id="rust">Rust</h2>
-<p>I firsted started implementing Tox as a way to learn Rust and I have to say I have fallen in love with the language. Unlike what a lot of people say about the I only have praises for it and haven't ran into many problems with it and if I did have a problem the <a href="https://www.reddit.com/r/rust/">/r/rust</a> community helped and <a href="https://github.com/rust-lang/rust-clippy">clippy</a> which is a valuabe liniting tool helps you write more idiomatic rust. Another factor that made Rust really pleasent to use was the fact that it had pattern matching, pattern matching is a very useful feature and makes langauges that have it very suitable for writing a compiler. If I were to be asked to rewrite Tox I would still choose Rust.</p>
+<p>I first started implementing Tox as a way to learn Rust and I have to say I have fallen in love with the language. Unlike what a lot of people say about the I only have praises for it and haven't ran into many problems with it and if I did have a problem the <a href="https://www.reddit.com/r/rust/">/r/rust</a> community helped and <a href="https://github.com/rust-lang/rust-clippy">clippy</a> which is a valuable liniting tool helps you write more idiomatic rust. Another factor that made Rust really pleasant to use was the fact that it had pattern matching, pattern matching is a very useful feature and makes langauges that have it very suitable for writing a compiler. If I were to be asked to rewrite Tox I would still choose Rust.</p>
 
     </div>
 
