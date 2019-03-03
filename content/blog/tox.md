@@ -8,6 +8,7 @@ date=2019-03-03
 
 I have been working on a programming langauge called #Tox# that is a statically based programming language that is  written in Rust and is based on Lox. Lox is the progamming language that you a reader implement when going through the [Crafting Interpreters](http://www.craftinginterpreters.com/contents.html). 
 
+<!-- more -->
 ## Improvements
 
 After finishing the creafting interpreters book you end up with a programming langauge that is dynmacillay typed. I genearly have no problems with a dynamically typed programming language but one the first improvements that I made to Tox was to add a type system.

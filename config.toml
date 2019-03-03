@@ -20,6 +20,4 @@ description = "A blog were I share whats on my mind"
 # Put all your custom variables here
 hyde_links = [
     {url="/",name="Home"},
-    {url="https:://github.com/lapz",name ="Github"},
-    {url="https:://linkedin.com/in/lprattl1",name="Linked In"}    
 ]
