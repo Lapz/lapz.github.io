@@ -1,7 +1,6 @@
 +++
 title ="Tox"
 description = "The Tox programming language"
-template = "page.html"
 in_search_index = true
 date=2019-03-03
 +++

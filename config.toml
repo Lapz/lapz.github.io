@@ -11,13 +11,21 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-theme="hyde"
+theme="after-dark"
 
 title = "Lapz World"
 description = "A blog were I share whats on my mind"
+
+taxonomies =[
+    {name="categories", rss =true},
+    {name ="tags", rss = true}
+]
 
 [extra]
 # Put all your custom variables here
 hyde_links = [
     {url="/",name="Home"},
+    {url = "$BASE_URL/about",name="About"},
+    {url = "$BASE_URL/tags",name="Tags"},
+    {url = "$BASE_URL/Categories",name="Categories"}
 ]
