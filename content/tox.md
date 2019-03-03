@@ -8,7 +8,7 @@ date=2019-03-03
 categories= ["rust","tox","vm"]
 +++
 
-I have been working on a programming langauge called #Tox# that is a statically based programming language that is  written in Rust and is based on Lox. Lox is the progamming language that you a reader implement when going through the [Crafting Interpreters](http://www.craftinginterpreters.com/contents.html). 
+I have been working on a programming langauge called Tox that is a statically based programming language that is  written in Rust and is based on Lox. Lox is the progamming language that you a reader implement when going through the [Crafting Interpreters](http://www.craftinginterpreters.com/contents.html). 
 
 <!-- more -->
 ## Improvements
