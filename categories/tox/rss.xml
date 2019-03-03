@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Lapz World</title>
+        <link>lapz.github.io/</link>
+        <description>A blog were I share whats on my mind</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="lapz.github.io/categories/tox/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sun, 03 Mar 2019 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>Tox</title>
+                <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
+                <link>lapz.github.io/tox/</link>
+                <guid>lapz.github.io/tox/</guid>
+                <description>&lt;p&gt;I have been working on a programming langauge called #Tox# that is a statically based programming language that is  written in Rust and is based on Lox. Lox is the progamming language that you a reader implement when going through the &lt;a href=&quot;http:&#x2F;&#x2F;www.craftinginterpreters.com&#x2F;contents.html&quot;&gt;Crafting Interpreters&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

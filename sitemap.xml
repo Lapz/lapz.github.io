@@ -1,0 +1,34 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+            <loc>lapz.github.io/tox/</loc>
+            
+                <lastmod>2019-03-03</lastmod>
+            
+        </url>
+    
+    
+        <url>
+            <loc>lapz.github.io/</loc>
+        </url>
+    
+    
+        
+        <url>
+            <loc>lapz.github.io/categories/</loc>
+        </url>
+        
+        <url>
+            <loc>lapz.github.io/categories/rust/</loc>
+        </url>
+        
+        <url>
+            <loc>lapz.github.io/categories/tox/</loc>
+        </url>
+        
+        <url>
+            <loc>lapz.github.io/categories/vm/</loc>
+        </url>
+        
+    
+</urlset>
