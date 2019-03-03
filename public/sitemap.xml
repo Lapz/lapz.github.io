@@ -17,4 +17,22 @@
         </url>
     
     
+        
+        <url>
+            <loc>http://127.0.0.1:1111/categories/</loc>
+        </url>
+        
+        <url>
+            <loc>http://127.0.0.1:1111/categories/rust/</loc>
+        </url>
+        
+        <url>
+            <loc>http://127.0.0.1:1111/categories/tox/</loc>
+        </url>
+        
+        <url>
+            <loc>http://127.0.0.1:1111/categories/vm/</loc>
+        </url>
+        
+    
 </urlset>
